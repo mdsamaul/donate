@@ -1,50 +1,61 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-header{
+
+header {
     width: 100%;
     height: 100vh;
     background-image: url(../assert/images/donat-bg.PNG);
     background-size: cover;
 }
-.header-manu{
+
+.header-manu {
     display: flex;
     justify-content: space-around;
-    padding: 20px 0;
-    background-color: rgba(0, 0, 0, 0.493);
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.192);
     justify-items: center;
     align-items: center;
 }
-.donate-color{
+
+.donate-color {
     color: #ffffff;
     font-size: 24px;
     font-weight: 700;
     cursor: pointer;
     transition: .9s;
 }
-.donate-color:hover{
+
+.donate-color:hover {
     color: #ff0000;
     transition: .9s;
 }
-.donate-color:hover .logo-color{
+
+.donate-color:hover .logo-color {
     color: #ffffff;
     transition: .9s;
 }
-.logo-color{
+
+.logo-color {
     color: red;
     transition: .9s;
 }
-nav ul{
-    display:flex;
+
+nav ul {
+    display: flex;
     justify-content: center;
-    
+
     align-items: center;
 }
-nav li{
+
+nav li {
     list-style: none;
 }
-nav li a{
+
+nav li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
@@ -54,26 +65,180 @@ nav li a{
     padding: 20px 20px;
     opacity: 100%;
 }
-nav li a:hover{
+
+nav li a:hover {
     color: red;
     border-bottom: 1px dashed red;
-    
+
     transition: all linear .7s;
 }
-.btn{
+
+.btn {
     cursor: pointer;
     padding: 12px 40px;
-    background-color: #ff0000;
+    background-color: #ff8181;
     border-radius: 20px;
     color: #ffffff;
     transition: .7s;
-    border: 1px solid #ff0000;
+    border: 1px solid #ff8181;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+
+    background-color: rgba(0, 0, 0, 0.507);
+    color: #ff8181;
+    transition: .7s;
+    border: 1px solid #ff8181;
+    font-weight: 600;
+}
+
+/* bannar section */
+.bannar {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 100px 10px;
+}
+
+.title {
+    color: white;
+    font-size: 50px;
+    padding: 20px 320px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+        'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 700;
 }
-.btn:hover{
-    background-color: #000000;
-    color: #ff0000 ;
+.details{
+    color: aliceblue;
+    font-size: 18px;
+    padding: 20px 320px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.donate-today{
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+}
+.title-donate{
+    color: #000000;
+}
+.title-details{
+    color: rgb(121, 121, 121);
+}
+.tk-item{
+    text-align: center;
+}
+.tk-item ul{
+    display: flex;
+    justify-content: center;
+}
+.tk-item li{
+    list-style: none;
+    padding: 30px 30px;
+    text-align: center;
+    cursor: pointer;
+    background-color: beige;
+    margin: 5px;
+    font-weight: 900;
+    color: rgb(99, 99, 99);
+    font-size: 22px;
+    border-radius: 5px;
+    border: 1px solid beige;
     transition: .7s;
-    border: 1px solid #ff0000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.tk-item li:hover{
+    border: 1px solid red;
+    border-radius: 5px;
+    transition: .7s;
+    background-color: rgb(248, 214, 214);
+}
+
+input {
+    border-top-style: hidden;
+    width: 50%;
+    padding: 20px 0px;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
     font-weight: 700;
+    font-size: 22px;
+  }
+  
+  
+
+
+
+
+::placeholder{
+    padding: 10px 0px;
+    align-items: center;
+    font-size: 18px;
+    margin-left: -150px;
+}
+.next-btn{
+    margin: 20px 0;
+}
+.next-btn:hover{
+    background-color: #ffffff;
+}
+
+/* our donate section */
+.our-donate-plan{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.donate-plan{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 40px 0;
+    color: #000000;
+}
+.plan-detials{
+    padding: 50px 320px;
+    font-size: 18px;
+    color: rgb(143, 143, 143);
+}
+.donate-plan-items{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 100px;
+}
+.donate-itam{
+    width: 25%;
+    padding: 30px 40px;
+    margin: 15px;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.199);
+    border-radius: 5px;
+    color: rgb(104, 104, 104);
+    
+}
+.donate-itam:hover{
+    box-shadow: 0px 6px 50px rgba(45, 58, 47, 0.473);
+    border-radius: 5px;
+}
+.plan-img{
+    padding: 30px 0;
+}
+.sub-details{
+    color: rgb(133, 134, 134);
+    font-size: 18px;
+    padding: 20px 10px;
+}
+.details-color-1{
+    background-color: #edf5f6;
+}
+.details-color-2{
+    background-color: #ffeeee;
+}
+.details-color-3{ 
+    background-color: #fff4d6;
+}
+.sub-title{
+    color: #000000;
 }
